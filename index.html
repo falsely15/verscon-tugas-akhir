@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verscon</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header>
+    <div class="container-fluid px-5">
+      <div class="row align-items-center pe-4">
+        <div class="col-sm-3">
+          <img src="img/logo.png" alt="Logo" width="180">
+        </div>
+
+        <div class="col-sm-5">
+          <div class="headerSearch d-flex align-items-center">
+            <div class="search">
+              <input type="text" placeholder="Search item...">
+              <i class="searchIcon cursor fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>  
+        </div>
+
+        <div class="col-sm d-flex justify-content-end p-0">
+          <ul class="list lit-inline mb-0 headerTabs">
+            <li class="wishlist list-inline-item me-4">
+              <i class="fa-regular fa-heart"></i>
+              <span class="wishlist-badge badge bg-primary rounded-circle">0</span>
+              Wishlist
+              <div class="wishlist-dropdown border rounded-2 p-3 py-4">
+                <p class="empty-text text-black-50 text-center my-auto">Empty</p>
+                <div class="wishlist-item row mb-3 g-2">
+                  <div class="col-sm text-center">
+                    <img src="https://www.converse.id/media/catalog/product/cache/ae7cee22ac1ff58c2794c87414f27b45/0/8/0888-CONA12206C00505H-1.jpg" alt="headphone collection" width="80" class="border rounded-4">
+                  </div>
+                  <div class="col-sm">
+                    <p class="mb-1 text-black">Chuck Taylor All Star Classic</p>
+                    <ul class="list list-inline d-flex">
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-regular fa-star text-black"></i></li>
+                    </ul>  
+                  </div>
+                </div>
+                <div class="wishlist-item row mb-3 g-2">
+                  <div class="col-sm text-center">
+                    <img src="https://static.nike.com/a/images/w_1280,q_auto,f_auto/b8979673-f607-4370-99ad-2e444d585c11/air-jordan-1-high-85-black-white-bq4422-001-release-date.jpg" class="productCard card-img-top cursor" alt="headphone collection" width="80" class="border rounded-4">
+                  </div>
+                  <div class="col-sm">
+                    <p class="mb-1 text-black">Chuck Taylor All Star Classic</p>
+                    <ul class="list list-inline d-flex">
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-regular fa-star text-black"></i></li>
+                    </ul>  
+                  </div>
+                </div>
+                <div class="wishlist-item row mb-3 g-2">
+                  <div class="col-sm text-center">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/387327/10/sv01/fnd/IDN/fmt/png/Sepatu-Sneakers-CA-Pro-Suede-FS" width="80" class="border rounded-4">
+                  </div>
+                  <div class="col-sm">
+                    <p class="mb-1 text-black">Chuck Taylor All Star Classic</p>
+                    <ul class="list list-inline d-flex">
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-regular fa-star text-black"></i></li>
+                    </ul>  
+                  </div>
+                </div>
+                <div class="wishlist-item row g-2">
+                  <div class="col-sm text-center">
+                    <img src="https://nappamilano.id/cdn/shop/products/b3_03b73486-d943-4eac-bde8-0116d9616b25_480x480.png?v=1640246371" class="productCard card-img-top cursor" alt="headphone collection" width="80" class="border rounded-4">
+                  </div>
+                  <div class="col-sm">
+                    <p class="mb-1 text-black">Chuck Taylor All Star Classic</p>
+                    <ul class="list list-inline d-flex">
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-regular fa-star text-black"></i></li>
+                    </ul>  
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="cart list-inline-item me-4">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="badge bg-primary rounded-circle">0</span>
+              Cart
+              <div class="cart-dropdown border rounded-2 p-3 py-4">
+                <p class="empty-text text-black-50 text-center my-auto">Empty</p>
+              </div>
+            </li>
+            <li class="list-inline-item">
+              <i class="fa-regular fa-user"></i>
+              <a class="profile" href="profile.html">Biodata</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="d-flex align-items-center">
+
+    <div class="container-fluid px-5">
+
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-sm-3 d-flex align-items-center justify-content-start">
+          <i class="fa-solid fa-phone d-inline-block me-4 fs-4"></i>
+          <div class="d-flex flex-column">
+            <h3 class="text-primary fs-5 mb-0">1700 - 666</h3>
+            <p class="mb-0 fs-6">24/7 Support Center</p>  
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <ul class="menu-category-list list list-inline mb-0 d-flex justify-content-center align-items-center">
+
+            <li class="menu-category">
+              <a href="index.html" class="menu-title fw-bold text-decoration-none text-secondary" style="letter-spacing: 1.5px;">Home</a>
+            </li>
+
+            <li class="menu-category">
+              <a href="shop.html" class="menu-title fw-bold text-decoration-none text-secondary" style="letter-spacing: 1.5px;">Shop</a>
+            </li>
+    
+            <li class="menu-category">
+              <a href="#" class="menu-title fw-bold text-decoration-none text-secondary" style="letter-spacing: 1.5px;">Category</a>
+    
+              <div class="dropdown-panel">
+    
+                <ul class="dropdown-panel-list list list-inline">
+
+                  <li class="menu-title fw-bold mb-3 mb-3">
+                    <a href="#" class="text-decoration-none">Dress</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Derby</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Oxford</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Brogue</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Monk</a>
+                  </li>
+    
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">
+                      <img src="img/category/banner/shoes-banner-1.jpg" alt="headphone collection" width="250"
+                        height="119">
+                    </a>
+                  </li>
+  
+                </ul>
+  
+                <ul class="dropdown-panel-list list list-inline">
+  
+                  <li class="menu-title fw-bold mb-3">
+                    <a href="#" class="text-decoration-none">Casual</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Sneakers</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Boat</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Espadrilles</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Sandals</a>
+                  </li>
+    
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">
+                      <img src="img/category/banner/shoes-banner-2.jpg" alt="men's fashion" width="250" height="119">
+                    </a>
+                  </li>
+  
+                </ul>
+  
+                <ul class="dropdown-panel-list list list-inline">
+  
+                  <li class="menu-title fw-bold mb-3">
+                    <a href="#" class="text-decoration-none">Boots</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Chukka</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Chelsea</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Jodhpur</a>
+                  </li>
+
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Cap Toe</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">
+                      <img src="img/category/banner/shoes-banner-3.jpg" alt="women's fashion" width="250" height="119">
+                    </a>
+                  </li>
+  
+                </ul>
+  
+                <ul class="dropdown-panel-list list list-inline">
+  
+                  <li class="menu-title fw-bold mb-3">
+                    <a href="#" class="text-decoration-none" class="text-decoration-none">Leathers</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Suede</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Pebble Scotch</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Shell Cordovan</a>
+                  </li>
+
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Caslon</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">
+                      <img src="img/category/banner/shoes-banner-4.jpg" alt="mouse collection" width="250" height="119">
+                    </a>
+                  </li>
+  
+                </ul>
+    
+              </div>
+            </li>
+    
+            <li class="menu-category">
+              <a href="about.html" class="menu-title fw-bold text-decoration-none text-secondary" style="letter-spacing: 1.5px;">About</a>
+            </li>
+
+            <li class="menu-category">
+              <a href="blog.html" class="menu-title fw-bold text-decoration-none text-secondary" style="letter-spacing: 1.5px;">Blog</a>
+            </li>
+    
+          </ul>
+        </div>
+
+        <div class="col-sm-3 d-flex justify-content-end">
+          <button class="btn-secondary me-2"></i> Sign up</button>
+          <button class="btn-primary m-0"></i> Sign in <i class="fa-solid fa-right-to-bracket"></i></button>
+        </div>
+      </div>
+
+    </div>
+
+  </nav>
+  
+  <section>
+    <div class="container-fluid p-4 px-5">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner border rounded-5">
+          <div class="carousel-item active">
+            <img src="img/banner/shoes-2.jpg" height="450" class="d-block w-100 object-fit-cover" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner/shoes-3.jpg" height="450" class="d-block w-100 object-fit-cover object" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner/shoes-1.jpg" height="450" class="d-block w-100 object-fit-cover" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="featuredSection container-fluid p-5">
+      <h5 class="mb-4">Featured Categories</h5>
+      <div class="row">
+        <div class="col-sm">
+          <ul class="list list-inline d-flex flex-lg-row flex-sm-column align-items-center justify-content-between">
+            <li>
+              <div class="container-fluid p-3 border rounded-circle featured-img">
+              <img src="img/category/featured/dress.png" width="120" alt="">                
+              </div>
+              <p class="fw-bold text-center mt-2">Dress</p>
+            </li>
+            <li>
+              <div class="container-fluid p-3 border rounded-circle featured-img">
+              <img src="img/category/featured/casual.png" width="120" alt="">                
+              </div>
+              <p class="fw-bold text-center mt-2">Casual</p>
+            </li>
+            <li>
+              <div class="container-fluid p-3 border rounded-circle featured-img">
+              <img src="img/category/featured/sneakers.png" width="120" alt="">                
+              </div>
+              <p class="fw-bold text-center mt-2">Sneaker</p>
+            </li>
+            <li>
+              <div class="container-fluid p-3 border rounded-circle featured-img">
+              <img src="img/category/featured/boots.png" width="120" alt="">                
+              </div>
+              <p class="fw-bold text-center mt-2">Boots</p>
+            </li>
+            <li>
+              <div class="container-fluid p-3 border rounded-circle featured-img">
+              <img src="img/category/featured/athletic.png" width="120" alt="">                
+              </div>
+              <p class="fw-bold text-center mt-2">Athletic</p>
+            </li>
+            <li>
+              <div class="container-fluid p-3 border rounded-circle featured-img">
+              <img src="img/category/featured/angkle.png" width="120" alt="">                
+              </div>
+              <p class="fw-bold text-center mt-2">Ankle</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container-fluid px-5">
+      <h5 class="mb-4">Popular Products</h5>
+      <div class="row">
+        <div class="col-sm">
+          <div class="card" style="width: 18rem;">
+            <div class="container-fluid p-0">
+              <img src="https://www.converse.id/media/catalog/product/cache/ae7cee22ac1ff58c2794c87414f27b45/0/8/0888-CONA12206C00505H-1.jpg" class="productCard card-img-top cursor" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Casual</h5>
+              <p class="card-text">Chuck Taylor All Star Classic</p>
+              <ul class="list list-inline d-flex">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-regular fa-star"></i></li>
+              </ul>
+              <p class="card-text">By <a href="#" class="text-decoration-none text-primary">Converse</a></p>
+              <button class="btn-primary" onclick="addToFavorite(1)">Add To Favorite</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" style="width: 18rem;">
+            <div class="container-fluid">
+              <img src="https://static.nike.com/a/images/w_1280,q_auto,f_auto/b8979673-f607-4370-99ad-2e444d585c11/air-jordan-1-high-85-black-white-bq4422-001-release-date.jpg" class="productCard card-img-top cursor" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Athletic</h5>
+              <p class="card-text">Air Jordan 1 High 85 Black White</p>
+              <ul class="list list-inline d-flex">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+              </ul>
+              <p class="card-text">By <a href="#" class="text-decoration-none text-primary">Nike</a></p>
+              <button class="btn-primary" onclick="addToFavorite(2)">Add To Favorite</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" style="width: 18rem;">
+            <div class="container-fluid">
+              <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/387327/10/sv01/fnd/IDN/fmt/png/Sepatu-Sneakers-CA-Pro-Suede-FS" class="productCard card-img-top cursor" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Sneaker</h5>
+              <p class="card-text">CA Pro Suede FS</p>
+              <ul class="list list-inline d-flex">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-regular fa-star"></i></li>
+              </ul>
+              <p class="card-text">By <a href="#" class="text-decoration-none text-primary">Puma</a></p>
+              <button class="btn-primary" onclick="addToFavorite(3)" >Add To Favorite</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" style="width: 18rem;">
+            <div class="container-fluid">
+              <img src="https://nappamilano.id/cdn/shop/products/b3_03b73486-d943-4eac-bde8-0116d9616b25_480x480.png?v=1640246371" class="productCard card-img-top cursor" alt="...">              
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Brogues</h5>
+              <p class="card-text">Noir</p>
+              <ul class="list list-inline d-flex">
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+                <li><i class="fa-solid fa-star"></i></li>
+              </ul>
+              <p class="card-text">By <a href="#" class="text-decoration-none text-primary">Nappa Milano</a></p>
+              <button class="btn-primary" onclick="addToFavorite(4)" >Add To Favorite</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <section>
+      <div class="container-fuid p-5">
+        <div class="emailSection w-100 h-100 border rounded-5 p-5">
+          <h1 class="text-light fw-bold">Stay home & get your best <br> shoes from our shop</h1>
+          <h4 class="text-light fw-light">Don't forget to subscribe with Verscon!</h4>
+          <div class="emailBanner mt-4">
+            <input type="text" class="emailInput" placeholder="Your email address">
+            <button class="btn-email"><i class="fa-solid fa-paper-plane fs-6  "></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container-fluid p-5 pt-0">
+      <div class="row">
+        <div class="col-sm px-3">
+          <img src="img/logo.png" alt="Logo" width="200">
+          <h6 class="fw-bold my-3">Contact</h6>
+          <ul class="list list-inline">
+            <li class="list list-inline-item"><span class="fw-bold text-secondary">Address:</span> Jl. Soekarno Hatta</li>
+            <li class="list list-inline-item"><span class="fw-bold text-secondary">Phone:</span> +01 2222 365 (+62) 01 2345 6789</li>
+            <li class="list list-inline-item"><span class="fw-bold text-secondary">Email:</span> verscon-original@gmail.com</li>
+          </ul>
+
+          <h6 class="fw-bold mb-3">Follow Us</h6>
+          <ul class="list list-inline d-flex gap-2">
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-youtube"></i></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h6 class="fw-bold mb-3">About</h6>
+          <ul class="list-inline">
+            <li class="text-secondary">About Us</li>
+            <li class="text-secondary">Delivery Information</li>
+            <li class="text-secondary">Privacy Policy</li>
+            <li class="text-secondary">Terms & Conditions</li>
+            <li class="text-secondary">Contact Us</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h6 class="fw-bold mb-3">My Account</h6>
+          <ul class="list-inline">
+            <li class="text-secondary">Sign in</li>
+            <li class="text-secondary">View Cart</li>
+            <li class="text-secondary">My Whislist</li>
+            <li class="text-secondary">Track My Order</li>
+            <li class="text-secondary">Help</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-4">
+          <h6 class="fw-bold mb-3">Install App</h6>
+          <p class="text-secondary mb-2">From App Store or Google Play</p>
+          <div class="d-flex">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png" width="185" class="object-fit-contain" alt="">
+            <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png?hl=id" width="200" alt="Google play">
+          </div>
+          <p class="text-secondary mb-2">Secured Payment Gateways</p>
+          <img src="img/payment.png" width="200" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>   
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/1432fd7de8.js" crossorigin="anonymous"></script>
+
+  <script>
+    const wishlist = document.querySelector('.wishlist');
+    const wishlistDropdown = document.querySelector('.wishlist-dropdown');
+    const wishlistBadge = document.querySelector('.wishlist-badge');
+    const emptyText = document.querySelector('.empty-text');
+    
+    const wishlistItems = document.querySelectorAll('.wishlist-item');
+    wishlistItems.forEach(item => item.style.display = "none");
+
+    let count = 0;
+
+    function addToFavorite(item) {      
+      emptyText.style.display = "none";
+
+      if (wishlistItems[item - 1].style.display !== "flex") {
+        wishlistItems[item - 1].style.display = "flex";
+        count++;
+      }
+
+      wishlistBadge.innerHTML = count;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verscon</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header>
+    <div class="container-fluid px-5">
+      <div class="row align-items-center pe-4">
+        <div class="col-sm-3">
+          <img src="img/logo.png" alt="Logo" width="180">
+        </div>
+
+        <div class="col-sm-5">
+          <div class="headerSearch d-flex align-items-center">
+            <div class="search">
+              <input type="text" placeholder="Search item...">
+              <i class="searchIcon cursor fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>  
+        </div>
+
+        <div class="col-sm d-flex justify-content-end p-0">
+          <ul class="list lit-inline mb-0 headerTabs">
+            <li class="wishlist list-inline-item me-4">
+              <i class="fa-regular fa-heart"></i>
+              <span class="wishlist-badge badge bg-primary rounded-circle">0</span>
+              Wishlist
+              <div class="wishlist-dropdown border rounded-2 p-3 py-4">
+                <p class="empty-text text-black-50 text-center my-auto">Empty</p>
+                <div class="wishlist-item row mb-3 g-2">
+                  <div class="col-sm text-center">
+                    <img src="https://www.converse.id/media/catalog/product/cache/ae7cee22ac1ff58c2794c87414f27b45/0/8/0888-CONA12206C00505H-1.jpg" alt="headphone collection" width="80" class="border rounded-4">
+                  </div>
+                  <div class="col-sm">
+                    <p class="mb-1 text-black">Chuck Taylor All Star Classic</p>
+                    <ul class="list list-inline d-flex">
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-regular fa-star text-black"></i></li>
+                    </ul>  
+                  </div>
+                </div>
+                <div class="wishlist-item row mb-3 g-2">
+                  <div class="col-sm text-center">
+                    <img src="https://static.nike.com/a/images/w_1280,q_auto,f_auto/b8979673-f607-4370-99ad-2e444d585c11/air-jordan-1-high-85-black-white-bq4422-001-release-date.jpg" class="productCard card-img-top cursor" alt="headphone collection" width="80" class="border rounded-4">
+                  </div>
+                  <div class="col-sm">
+                    <p class="mb-1 text-black">Chuck Taylor All Star Classic</p>
+                    <ul class="list list-inline d-flex">
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-regular fa-star text-black"></i></li>
+                    </ul>  
+                  </div>
+                </div>
+                <div class="wishlist-item row mb-3 g-2">
+                  <div class="col-sm text-center">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/387327/10/sv01/fnd/IDN/fmt/png/Sepatu-Sneakers-CA-Pro-Suede-FS" width="80" class="border rounded-4">
+                  </div>
+                  <div class="col-sm">
+                    <p class="mb-1 text-black">Chuck Taylor All Star Classic</p>
+                    <ul class="list list-inline d-flex">
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-regular fa-star text-black"></i></li>
+                    </ul>  
+                  </div>
+                </div>
+                <div class="wishlist-item row g-2">
+                  <div class="col-sm text-center">
+                    <img src="https://nappamilano.id/cdn/shop/products/b3_03b73486-d943-4eac-bde8-0116d9616b25_480x480.png?v=1640246371" class="productCard card-img-top cursor" alt="headphone collection" width="80" class="border rounded-4">
+                  </div>
+                  <div class="col-sm">
+                    <p class="mb-1 text-black">Chuck Taylor All Star Classic</p>
+                    <ul class="list list-inline d-flex">
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-solid fa-star text-black"></i></li>
+                      <li><i class="fa-regular fa-star text-black"></i></li>
+                    </ul>  
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="cart list-inline-item me-4">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="badge bg-primary rounded-circle">0</span>
+              Cart
+              <div class="cart-dropdown border rounded-2 p-3 py-4">
+                <p class="empty-text text-black-50 text-center my-auto">Empty</p>
+              </div>
+            </li>
+            <li class="list-inline-item">
+              <i class="fa-regular fa-user"></i>
+              <a class="profile" href="profile.html">Biodata</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="d-flex align-items-center">
+
+    <div class="container-fluid px-5">
+
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-sm-3 d-flex align-items-center justify-content-start">
+          <i class="fa-solid fa-phone d-inline-block me-4 fs-4"></i>
+          <div class="d-flex flex-column">
+            <h3 class="text-primary fs-5 mb-0">1700 - 666</h3>
+            <p class="mb-0 fs-6">24/7 Support Center</p>  
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <ul class="menu-category-list list list-inline mb-0 d-flex justify-content-center align-items-center">
+
+            <li class="menu-category">
+              <a href="index.html" class="menu-title fw-bold text-decoration-none text-secondary" style="letter-spacing: 1.5px;">Home</a>
+            </li>
+
+            <li class="menu-category">
+              <a href="shop.html" class="menu-title fw-bold text-decoration-none text-secondary" style="letter-spacing: 1.5px;">Shop</a>
+            </li>
+    
+            <li class="menu-category">
+              <a href="#" class="menu-title fw-bold text-decoration-none text-secondary" style="letter-spacing: 1.5px;">Category</a>
+    
+              <div class="dropdown-panel">
+    
+                <ul class="dropdown-panel-list list list-inline">
+
+                  <li class="menu-title fw-bold mb-3 mb-3">
+                    <a href="#" class="text-decoration-none">Dress</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Derby</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Oxford</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Brogue</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Monk</a>
+                  </li>
+    
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">
+                      <img src="img/category/banner/shoes-banner-1.jpg" alt="headphone collection" width="250"
+                        height="119">
+                    </a>
+                  </li>
+  
+                </ul>
+  
+                <ul class="dropdown-panel-list list list-inline">
+  
+                  <li class="menu-title fw-bold mb-3">
+                    <a href="#" class="text-decoration-none">Casual</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Sneakers</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Boat</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Espadrilles</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Sandals</a>
+                  </li>
+    
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">
+                      <img src="img/category/banner/shoes-banner-2.jpg" alt="men's fashion" width="250" height="119">
+                    </a>
+                  </li>
+  
+                </ul>
+  
+                <ul class="dropdown-panel-list list list-inline">
+  
+                  <li class="menu-title fw-bold mb-3">
+                    <a href="#" class="text-decoration-none">Boots</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Chukka</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Chelsea</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Jodhpur</a>
+                  </li>
+
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Cap Toe</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">
+                      <img src="img/category/banner/shoes-banner-3.jpg" alt="women's fashion" width="250" height="119">
+                    </a>
+                  </li>
+  
+                </ul>
+  
+                <ul class="dropdown-panel-list list list-inline">
+  
+                  <li class="menu-title fw-bold mb-3">
+                    <a href="#" class="text-decoration-none" class="text-decoration-none">Leathers</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Suede</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Pebble Scotch</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Shell Cordovan</a>
+                  </li>
+
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">Caslon</a>
+                  </li>
+  
+                  <li class="panel-list-item">
+                    <a href="#" class="text-decoration-none">
+                      <img src="img/category/banner/shoes-banner-4.jpg" alt="mouse collection" width="250" height="119">
+                    </a>
+                  </li>
+  
+                </ul>
+    
+              </div>
+            </li>
+    
+            <li class="menu-category">
+              <a href="about.html" class="menu-title fw-bold text-decoration-none text-secondary" style="letter-spacing: 1.5px;">About</a>
+            </li>
+
+            <li class="menu-category">
+              <a href="blog.html" class="menu-title fw-bold text-decoration-none text-secondary" style="letter-spacing: 1.5px;">Blog</a>
+            </li>
+    
+          </ul>
+        </div>
+
+        <div class="col-sm-3 d-flex justify-content-end">
+          <button class="btn-secondary me-2"></i> Sign up</button>
+          <button class="btn-primary m-0"></i> Sign in <i class="fa-solid fa-right-to-bracket"></i></button>
+        </div>
+      </div>
+
+    </div>
+
+  </nav>
+  
+  <section>
+    <div class="container-fluid p-5 pb-0">
+      <div class="heroSection border rounded-4 p-5">
+        <div class="row">
+          <div class="col-sm-6">
+            <h1 class="fw-bold">Shop Your Best Shoes <br> From Verscon</h1>
+            <p style="font-weight: 500;">Get your best shoes from our shop. We provide the best quality shoes for you.</p>
+            <!-- <button class="btn-primary">Shop Now</button> -->
+          </div>
+
+          <div class="col-sm-6">
+            <!-- <img src="img/hero.jpg" alt="Hero" class="w-100"> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="shopSection container-fluid m-0 p-5 pb-0">
+      <div class="row p-3">
+        <div class="col-sm-3">
+          <div class="col-sm shopSidebar border rounded-3 py-4 px-4">
+            <h6 class="fw-bold mb-3" style="letter-spacing: 1.5px;">CATEGORY</h6>
+            <ul class="shopCategory list-unstyled mb-0">
+              <li class="mb-2 fw-bold text-black-50 cursor"><img src="img/category/dress.png" class="me-1 mb-1" width="20" alt=""> Dress <i class="fa-solid fa-angle-right float-end"></i></li>
+              <ul class="shopDropdown list list-inline">
+                <li class="text-secondary fw-bold ms-5 mb-1">Oxford</li>
+                <li class="text-secondary fw-bold ms-5 mb-1">Derby</li>
+                <li class="text-secondary fw-bold ms-5 mb-1">Brogue</li>
+                <li class="text-secondary fw-bold ms-5 mb-1">Monk</li>
+                <li class="text-secondary fw-bold ms-5 mb-3">Loafers</li>
+              </ul>
+              <li class="mb-2 fw-bold text-black-50"><img src="img/category/casual.png" class="me-1 mb-1" width="20" alt=""> Casual <i class="fa-solid fa-angle-right float-end"></i></li>
+              <ul class="shopDropdown list list-inline">
+                <li class="text-secondary fw-bold ms-5 mb-1">Sneakers</li>
+                <li class="text-secondary fw-bold ms-5 mb-1">Boat</li>
+                <li class="text-secondary fw-bold ms-5 mb-1">Espadrilles</li>
+                <li class="text-secondary fw-bold ms-5 mb-1">Sandals</li>
+                <li class="text-secondary fw-bold ms-5 mb-3">Slip-Ons</li>
+              </ul>
+              <li class="mb-2 fw-bold text-black-50"><img src="img/category/boots.png" class="me-1 mb-1" width="20" alt=""> Boots <i class="fa-solid fa-angle-right float-end"></i></li>
+              <ul class="shopDropdown list list-inline">
+                <li class="text-secondary fw-bold ms-5 mb-1">Chelsea</li>
+                <li class="text-secondary fw-bold ms-5 mb-1">Chukka</li>
+                <li class="text-secondary fw-bold ms-5 mb-1">Brogue</li>
+              </ul>
+            </ul>
+          </div>
+          
+          <div class="col-sm py-5 px-1">
+            <h6 class="fw-bold mb-3" style="letter-spacing: 1.5px;">BEST SELLERS</h6>
+            <div class="row">
+              <div class="col-sm">
+                <div class="container-fluid">
+                  <img src="https://nappamilano.id/cdn/shop/products/b3_03b73486-d943-4eac-bde8-0116d9616b25_480x480.png?v=1640246371" class="img-fluid" alt="">
+                </div>                
+              </div>
+              <div class="col-sm-7">
+                <p class="mb-1">Noir</p>
+                <span class="text-black-50 text-decoration-line-through fw-bold d-block">Rp. 1.099.000</span> <span class="fw-bolder">Rp. 899.000</span>
+              </div>
+            </div>
+            <div class="row my-5">
+              <div class="col-sm">
+                <div class="container-fluid">
+                  <img src="https://nappamilano.id/cdn/shop/products/b3_03b73486-d943-4eac-bde8-0116d9616b25_480x480.png?v=1640246371" class="img-fluid" alt="">
+                </div>                
+              </div>
+              <div class="col-sm-7">
+                <p class="mb-1">Noir</p>
+                <span class="text-black-50 text-decoration-line-through fw-bold d-block">Rp. 1.099.000</span> <span class="fw-bolder">Rp. 899.000</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm">
+                <div class="container-fluid">
+                  <img src="https://nappamilano.id/cdn/shop/products/b3_03b73486-d943-4eac-bde8-0116d9616b25_480x480.png?v=1640246371" class="img-fluid" alt="">
+                </div>                
+              </div>
+              <div class="col-sm-7">
+                <p class="mb-1">Noir</p>
+                <span class="text-black-50 text-decoration-line-through fw-bold d-block">Rp. 1.099.000</span> <span class="fw-bolder">Rp. 899.000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm">
+          <div class="shopItems row p-4 py-0">
+            <h5 class="px-0 mb-3">New Products</h5>
+            <hr class="mb-4">
+            <div class="col-sm px-0 mb-5">
+              <div class="card" style="width: 15rem;">
+                <div class="card-img container-fluid p-0">
+                  <img src="https://static.nike.com/a/images/w_1280,q_auto,f_auto/b8979673-f607-4370-99ad-2e444d585c11/air-jordan-1-high-85-black-white-bq4422-001-release-date.jpg" class="productCard card-img-top cursor" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fs-6 fw-bolder text-primary">Athletic</h5>
+                  <p class="card-text mb-2">Air Jordan 1 High 85 Black White</p>
+                  <ul class="list list-inline d-flex mb-2">
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                  </ul>
+                  <div class="d-flex align-items-center justify-content-between">
+                      <p class="fw-bolder mb-0 d-inline">Rp. 667.000</p>
+                      <div>
+                        <button class="btn-primary ms-auto px-3"><i class="fa-solid fa-heart"></i></button>
+                        <button class="btn-primary ms-auto px-3"><i class="fa-solid fa-cart-plus"></i></button>  
+                      </div>  
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm px-0 mb-5">
+              <div class="card" style="width: 15rem;">
+                <div class="card-img container-fluid p-0">
+                  <img src="https://static.nike.com/a/images/w_1280,q_auto,f_auto/b8979673-f607-4370-99ad-2e444d585c11/air-jordan-1-high-85-black-white-bq4422-001-release-date.jpg" class="productCard card-img-top cursor" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fs-6 fw-bolder text-primary">Athletic</h5>
+                  <p class="card-text mb-2">Air Jordan 1 High 85 Black White</p>
+                  <ul class="list list-inline d-flex mb-2">
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                  </ul>
+                  <div class="d-flex align-items-center justify-content-between">
+                      <p class="fw-bolder mb-0 d-inline">Rp. 667.000</p>
+                      <div>
+                        <button class="btn-primary ms-auto px-3"><i class="fa-solid fa-heart"></i></button>
+                        <button class="btn-primary ms-auto px-3"><i class="fa-solid fa-cart-plus"></i></button>  
+                      </div>  
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm px-0 mb-5">
+              <div class="card" style="width: 15rem;">
+                <div class="card-img container-fluid p-0">
+                  <img src="https://static.nike.com/a/images/w_1280,q_auto,f_auto/b8979673-f607-4370-99ad-2e444d585c11/air-jordan-1-high-85-black-white-bq4422-001-release-date.jpg" class="productCard card-img-top cursor" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fs-6 fw-bolder text-primary">Athletic</h5>
+                  <p class="card-text mb-2">Air Jordan 1 High 85 Black White</p>
+                  <ul class="list list-inline d-flex mb-2">
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                  </ul>
+                  <div class="d-flex align-items-center justify-content-between">
+                      <p class="fw-bolder mb-0 d-inline">Rp. 667.000</p>
+                      <div>
+                        <button class="btn-primary ms-auto px-3"><i class="fa-solid fa-heart"></i></button>
+                        <button class="btn-primary ms-auto px-3"><i class="fa-solid fa-cart-plus"></i></button>  
+                      </div>  
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm px-0">
+              <div class="card" style="width: 15rem;">
+                <div class="card-img container-fluid p-0">
+                  <img src="https://static.nike.com/a/images/w_1280,q_auto,f_auto/b8979673-f607-4370-99ad-2e444d585c11/air-jordan-1-high-85-black-white-bq4422-001-release-date.jpg" class="productCard card-img-top cursor" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fs-6 fw-bolder text-primary">Athletic</h5>
+                  <p class="card-text mb-2">Air Jordan 1 High 85 Black White</p>
+                  <ul class="list list-inline d-flex mb-2">
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                  </ul>
+                  <div class="d-flex align-items-center justify-content-between">
+                      <p class="fw-bolder mb-0 d-inline">Rp. 667.000</p>
+                      <div>
+                        <button class="btn-primary ms-auto px-3"><i class="fa-solid fa-heart"></i></button>
+                        <button class="btn-primary ms-auto px-3"><i class="fa-solid fa-cart-plus"></i></button>  
+                      </div>  
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm px-0">
+              <div class="card" style="width: 15rem;">
+                <div class="card-img container-fluid p-0">
+                  <img src="https://static.nike.com/a/images/w_1280,q_auto,f_auto/b8979673-f607-4370-99ad-2e444d585c11/air-jordan-1-high-85-black-white-bq4422-001-release-date.jpg" class="productCard card-img-top cursor" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fs-6 fw-bolder text-primary">Athletic</h5>
+                  <p class="card-text mb-2">Air Jordan 1 High 85 Black White</p>
+                  <ul class="list list-inline d-flex mb-2">
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                  </ul>
+                  <div class="d-flex align-items-center justify-content-between">
+                      <p class="fw-bolder mb-0 d-inline">Rp. 667.000</p>
+                      <div>
+                        <button class="btn-primary ms-auto px-3"><i class="fa-solid fa-heart"></i></button>
+                        <button class="btn-primary ms-auto px-3"><i class="fa-solid fa-cart-plus"></i></button>  
+                      </div>  
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm px-0">
+              <div class="card" style="width: 15rem;">
+                <div class="card-img container-fluid p-0">
+                  <img src="https://static.nike.com/a/images/w_1280,q_auto,f_auto/b8979673-f607-4370-99ad-2e444d585c11/air-jordan-1-high-85-black-white-bq4422-001-release-date.jpg" class="productCard card-img-top cursor" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fs-6 fw-bolder text-primary">Athletic</h5>
+                  <p class="card-text mb-2">Air Jordan 1 High 85 Black White</p>
+                  <ul class="list list-inline d-flex mb-2">
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                    <li><i class="fa-solid fa-star" style="color: darkorange;" ></i></li>
+                  </ul>
+                  <div class="d-flex align-items-center justify-content-between">
+                      <p class="fw-bolder mb-0 d-inline">Rp. 667.000</p>
+                      <div>
+                        <button class="btn-primary ms-auto px-3"><i class="fa-solid fa-heart"></i></button>
+                        <button class="btn-primary ms-auto px-3"><i class="fa-solid fa-cart-plus"></i></button>  
+                      </div>  
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container-fluid pt-5 px-5">
+      <div class="row">
+        <div class="col-sm-4">
+          <h5 class="px-0 mb-3">Testimonial</h5>
+          <hr class="mb-4">
+          <div class="container-fluid border rounded-3 text-center py-3 px-5">
+            <img src="img/bean.jpeg" width="100" class="rounded-circle" alt="">
+            <p class="text-secondary fw-bolder mt-3 mb-0">MR. BEAN</p>
+            <p>CEO & Founder Invasion</p>
+            <i class="fa-solid fa-quote-left text-primary fs-5"></i>
+            <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus architecto dolores ipsa iste accusamus unde! consectetur adipisicing</p>
+          </div>
+        </div>
+        <div class="col-sm text-center">
+          <img src="img/banner/banner-1.jpg" width="400" class="img-fluid border rounded-4" alt="">
+        </div>
+        <div class="col-sm-4">
+          <h5 class="px-0 mb-3">Our Services</h5>
+          <hr class="mb-4">
+
+        <div class="container-fluid border rounded-3 py-4 px-5">
+          <ul class="list list-inline">
+            <li class="mb-2">
+              <span class="fw-bold text-secondary d-block">Worldwide Delivery</span>
+              <span>For Order Over 100K</span>
+            </li>
+            <li class="mb-2">
+              <span class="fw-bold text-secondary d-block">Next Day delivery</span>
+              <span>ID Orders Only</span>
+            </li>
+            <li class="mb-2">
+              <span class="fw-bold text-secondary d-block">Best Online Support</span>
+              <span>Hours: 8AM - 11PM</span>
+            </li>
+            <li class="mb-2">
+              <span class="fw-bold text-secondary d-block">Return Policy</span>
+              <span>Easy & Free Return</span>
+            </li>
+            <li>
+              <span class="fw-bold text-secondary d-block">30% Money Back</span>
+              <span>For Order Over 150k</span>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-sm">
+          <div class="container-fluid px-0 mb-3">
+            <img src="img/blog/blog-1.jpg" width="300" class="img-fluid border rounded-4" alt="">
+          </div>
+          <span class="text-primary">Athletic</span>
+          <p class="title-blog fw-bolder mb-1 fs-5" style="line-height: 1.2;">Step Up: Trending Shoes Everyone's Talking About.</p>
+          <p class="text-black-50">By <span class="text-secondary-emphasis">Mr Admin</span> / 06 April, 2024</p>
+        </div>
+        <div class="col-sm">
+          <div class="container-fluid px-0 mb-3">
+            <img src="img/blog/blog-2.jpg" width="300" class="img-fluid border rounded-4" alt="">
+          </div>
+          <span class="text-primary">Sneakers</span>
+          <p class="title-blog fw-bolder mb-1 fs-5" style="line-height: 1.2;">Sole Style: Must-Have Shoes This Season.</p>
+          <p class="text-black-50">By <span class="text-secondary-emphasis">Mr Admin</span> / 06 April, 2024</p>
+        </div>
+        <div class="col-sm">
+          <div class="container-fluid px-0 mb-3">
+            <img src="img/blog/blog-3.jpg" width="300" class="img-fluid border rounded-4" alt="">
+          </div>
+          <span class="text-primary">Casual</span>
+          <p class="title-blog fw-bolder mb-1 fs-5" style="line-height: 1.2;">Top Picks: Trending Footwear for Every Occasion.</p>
+          <p class="text-black-50">By <span class="text-secondary-emphasis">Mr Admin</span> / 06 April, 2024</p>
+        </div>
+        <div class="col-sm">
+          <div class="container-fluid px-0 mb-3">
+            <img src="img/blog/blog-4.jpg" width="300" class="img-fluid border rounded-4" alt="">
+          </div>
+          <span class="text-primary">Dress</span>
+          <p class="title-blog fw-bolder mb-1 fs-5" style="line-height: 1.2;">From Street to Chic: The Hottest Shoe Trends.</p>
+          <p class="text-black-50">By <span class="text-secondary-emphasis">Mr Admin</span> / 06 April, 2024</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <section>
+      <div class="container-fuid p-4 px-5">
+        <div class="emailSection w-100 h-100 border rounded-5 p-5">
+          <h1 class="text-light fw-bold">Stay home & get your best <br> shoes from our shop</h1>
+          <h4 class="text-light fw-light">Don't forget to subscribe with Verscon!</h4>
+          <div class="emailBanner mt-4">
+            <input type="text" class="emailInput" placeholder="Your email address">
+            <button class="btn-email"><i class="fa-solid fa-paper-plane fs-6  "></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container-fluid p-5">
+      <div class="row">
+        <div class="col-sm px-3">
+          <img src="img/logo.png" alt="Logo" width="200">
+          <h6 class="fw-bold my-3">Contact</h6>
+          <ul class="list list-inline">
+            <li class="list list-inline-item"><span class="fw-bold text-secondary">Address:</span> Jl. Soekarno Hatta</li>
+            <li class="list list-inline-item"><span class="fw-bold text-secondary">Phone:</span> +01 2222 365 (+62) 01 2345 6789</li>
+            <li class="list list-inline-item"><span class="fw-bold text-secondary">Email:</span> verscon-original@gmail.com</li>
+          </ul>
+
+          <h6 class="fw-bold mb-3">Follow Us</h6>
+          <ul class="list list-inline d-flex gap-2">
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-youtube"></i></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h6 class="fw-bold mb-3">About</h6>
+          <ul class="list-inline">
+            <li class="text-secondary">About Us</li>
+            <li class="text-secondary">Delivery Information</li>
+            <li class="text-secondary">Privacy Policy</li>
+            <li class="text-secondary">Terms & Conditions</li>
+            <li class="text-secondary">Contact Us</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-2">
+          <h6 class="fw-bold mb-3">My Account</h6>
+          <ul class="list-inline">
+            <li class="text-secondary">Sign in</li>
+            <li class="text-secondary">View Cart</li>
+            <li class="text-secondary">My Whislist</li>
+            <li class="text-secondary">Track My Order</li>
+            <li class="text-secondary">Help</li>
+          </ul>
+        </div>
+
+        <div class="col-sm-4">
+          <h6 class="fw-bold mb-3">Install App</h6>
+          <p class="text-secondary mb-2">From App Store or Google Play</p>
+          <div class="d-flex">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png" width="185" class="object-fit-contain" alt="">
+            <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png?hl=id" width="200" alt="Google play">
+          </div>
+          <p class="text-secondary mb-2">Secured Payment Gateways</p>
+          <img src="img/payment.png" width="200" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>   
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/1432fd7de8.js" crossorigin="anonymous"></script>
+</body>
+</html>
